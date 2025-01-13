@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-gray-600;
+}
+
+@media (pointer: coarse) {
+  .visible-on-pointer-coarse {
+    visibility: visible !important;
+  }
+}
+
+.important-children * {
+  all: unset;
+  all: revert !important;
+}
+
+.hide-scrollbar ul {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.hide-scrollbar ul::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
